@@ -1,0 +1,25 @@
+.container {
+  padding-top: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(172, 201, 91, 0.7),
+    rgba(209, 92, 151, 0.6)
+  );
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+p {
+  padding: 5px;
+}
+
+.site {
+  padding-bottom: 20px;
+}

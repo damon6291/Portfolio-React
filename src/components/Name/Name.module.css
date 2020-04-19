@@ -1,0 +1,25 @@
+.container {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(172, 201, 91, 0.7),
+      rgba(209, 92, 151, 0.6)
+    ),
+    url("../../assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 10%;
+  margin-bottom: 10%;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.text {
+  color: white;
+  font-size: 4rem;
+  font-weight: 500;
+}
