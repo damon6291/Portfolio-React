@@ -1,17 +1,22 @@
 [
   {
-    "language": "java"
+    "language": "java",
+    "description": "Proficient : 3-4 years of designing Games"
   },
   {
-    "language": "javaScript"
+    "language": "javaScript",
+    "description": "Intermediate : Experience of using d3 Library"
   },
   {
-    "language": "c"
+    "language": "c",
+    "description": "Intermediate : Experience of Computer System Designs"
   },
   {
-    "language": "react"
+    "language": "react",
+    "description": "Proficient : Experience of Building several Webpages"
   },
   {
-    "language": "mysql"
+    "language": "mysql",
+    "description": "Intermediate : Experience of writing Queries"
   }
 ]

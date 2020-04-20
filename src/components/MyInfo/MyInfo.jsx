@@ -8,16 +8,15 @@ const MyInfo = () => {
     <div className={styles.container}>
       <div className={styles.writtenInfo}>
         <h3>Professional Skills</h3>
-        <p>
+        <p className={styles.info}>
           Inquisitive and adaptive computer science major skilled with
           <strong> professional communication </strong>, a strong foundation in math, and
           programming algorithms. Seeking to utilize software development skills with a focus on
-          <strong> collaboration, communication, passion, and creativity.</strong> Possess several
-          experiences in building and testing single and multiplayer board games.
+          <strong> collaboration, communication, passion, and creativity.</strong>
         </p>
       </div>
       <div className={styles.imageContainer}>
-        <img className={styles.image} src={collaboration} />
+        <img alt="study" className={styles.image} src={collaboration} />
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ import styles from "./Project.module.css";
 
 const Project = ({ title, language, explanation, link, demo }) => {
   const findImage = () => {
-    if (title === "Corona") return require("../../assets/corona.jpg");
+    if (title === "CoronaTracker") return require("../../assets/corona.jpg");
     if (title === "Movie") return require("../../assets/movie.jpg");
     if (title === "Weather") return require("../../assets/weather.jpg");
     if (title === "HackerNews") return require("../../assets/hacker.jpg");
@@ -49,14 +49,20 @@ const Project = ({ title, language, explanation, link, demo }) => {
         style={{
           backgroundColor: "#92a8d1",
         }}>
-        <CardContent>
-          <Typography align="center" gutterBottom variant="h5">
-            {title}
-          </Typography>
-          <Button variant="contained" color="primary" className={styles.button} href={reference()}>
-            {linkOrDemo()}
-          </Button>
-        </CardContent>
+        <div className={styles.back}>
+          <CardContent>
+            <Typography align="center" gutterBottom variant="h5">
+              {title}
+            </Typography>
+            <Button
+              variant="contained"
+              color="primary"
+              className={styles.button}
+              href={reference()}>
+              {linkOrDemo()}
+            </Button>
+          </CardContent>
+        </div>
       </BackSide>
     </Flippy>
   );

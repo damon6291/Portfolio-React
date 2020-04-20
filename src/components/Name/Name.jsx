@@ -1,14 +1,12 @@
 import React from "react";
-import BackgroundSlider from "react-background-slider";
-import image1 from "../../assets/background.jpg";
-import image2 from "../../assets/java.jpg";
 
 import styles from "./Name.module.css";
 
 const Name = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="Name">
       <h1 className={styles.text}>Damon Joung</h1>
+      <h2 className={styles.job}>Software Engineer</h2>
     </div>
   );
 };

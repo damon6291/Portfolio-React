@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./Skill.module.css";
 
-const Skill = ({ language }) => {
+const Skill = ({ language, handleHover }) => {
   const findImage = () => {
     if (language === "java") return require("../../assets/java.jpg");
     if (language === "react") return require("../../assets/react.jpg");
@@ -12,7 +12,12 @@ const Skill = ({ language }) => {
   };
   return (
     <div className={styles.container}>
-      <img src={findImage()} className={styles.image} />
+      <img
+        alt={language}
+        src={findImage()}
+        className={styles.image}
+        onMouseEnter={() => handleHover(language)}
+      />
     </div>
   );
 };

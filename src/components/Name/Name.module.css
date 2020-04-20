@@ -23,3 +23,9 @@
   font-size: 4rem;
   font-weight: 500;
 }
+
+.job {
+  padding-top: 1%;
+  color: rgba(32, 32, 32, 0.7);
+  font-size: 2rem;
+}

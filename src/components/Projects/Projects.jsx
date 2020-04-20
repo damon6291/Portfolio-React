@@ -7,7 +7,7 @@ import styles from "./Projects.module.css";
 
 const Projects = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="Projects">
       <h2 className={styles.project}>Projects</h2>
       <Grid container spacing={1} justify="center">
         {Json.map((data, i) => (
