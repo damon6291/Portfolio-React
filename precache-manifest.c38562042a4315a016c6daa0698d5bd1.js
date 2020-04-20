@@ -1,43 +1,47 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "732b283011352876abf08ba32650f658",
+    "revision": "6baefe20579e7b74c58f932059d8c536",
     "url": "/Portfolio-React/index.html"
   },
   {
-    "revision": "9637aaac93fb80e0843b",
+    "revision": "cbf3c2d7c22ca0477a1d",
     "url": "/Portfolio-React/static/css/2.246d7c7d.chunk.css"
   },
   {
-    "revision": "ce47352cbc0c312347c5",
-    "url": "/Portfolio-React/static/css/main.b739df3f.chunk.css"
+    "revision": "c43bad7a41435e0d5a29",
+    "url": "/Portfolio-React/static/css/main.8cb62e68.chunk.css"
   },
   {
-    "revision": "9637aaac93fb80e0843b",
-    "url": "/Portfolio-React/static/js/2.a6f47ea3.chunk.js"
+    "revision": "cbf3c2d7c22ca0477a1d",
+    "url": "/Portfolio-React/static/js/2.40dd2ccb.chunk.js"
   },
   {
-    "revision": "31210747bd639fc5a820c67e8f918966",
-    "url": "/Portfolio-React/static/js/2.a6f47ea3.chunk.js.LICENSE.txt"
+    "revision": "5e9b6f5c16b720e8a86875f97734673e",
+    "url": "/Portfolio-React/static/js/2.40dd2ccb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ce47352cbc0c312347c5",
-    "url": "/Portfolio-React/static/js/main.035ee118.chunk.js"
+    "revision": "c43bad7a41435e0d5a29",
+    "url": "/Portfolio-React/static/js/main.a73e9eaf.chunk.js"
   },
   {
     "revision": "9eb8fae3f9e268d5ca39",
     "url": "/Portfolio-React/static/js/runtime-main.22e80223.js"
   },
   {
-    "revision": "89ccac5365f50ee229092a997f5e62ca",
-    "url": "/Portfolio-React/static/media/background.89ccac53.jpg"
-  },
-  {
     "revision": "c1df6887a94ccf06827f46fdaab36418",
     "url": "/Portfolio-React/static/media/bg.c1df6887.jpg"
   },
   {
+    "revision": "fc4e1d824e6efcb0e103b5aa6e2b693a",
+    "url": "/Portfolio-React/static/media/butchering.fc4e1d82.jpg"
+  },
+  {
     "revision": "1c1888a3eb2f04360763c1a95257b726",
     "url": "/Portfolio-React/static/media/c.1c1888a3.jpg"
+  },
+  {
+    "revision": "8e343846930f1507fd0661bf7e2c2acd",
+    "url": "/Portfolio-React/static/media/camping.8e343846.jpg"
   },
   {
     "revision": "e9588a3f5f390c210675b958db83cad4",
@@ -72,6 +76,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio-React/static/media/react.df70b005.jpg"
   },
   {
+    "revision": "acb365dcdc17ed21c176f9755d4c77d6",
+    "url": "/Portfolio-React/static/media/rockclimbing.acb365dc.jpg"
+  },
+  {
     "revision": "b7c2e1329a5d1a5b47a2b980ada4ba0c",
     "url": "/Portfolio-React/static/media/shell.b7c2e132.jpg"
   },
@@ -82,5 +90,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2ece7c4025e98ddaeb544a47c52c1c34",
     "url": "/Portfolio-React/static/media/weather.2ece7c40.jpg"
+  },
+  {
+    "revision": "bfad3dc08114a0ef255540f20ed29cd9",
+    "url": "/Portfolio-React/static/media/workout.bfad3dc0.jpg"
   }
 ]);

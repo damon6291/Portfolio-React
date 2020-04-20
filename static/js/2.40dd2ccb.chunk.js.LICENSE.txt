@@ -4,13 +4,11 @@ object-assign
 @license MIT
 */
 
-/**
-   * CSS Vendor prefix detection and property feature testing.
-   *
-   * @copyright Oleg Slobodskoi 2015
-   * @website https://github.com/jsstyles/css-vendor
-   * @license MIT
-   */
+/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
 
 /**
  * A better abstraction over CSS.
