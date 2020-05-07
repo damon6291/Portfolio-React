@@ -15,7 +15,7 @@ export const fadeIn = (node, xVal, yVal, duration) =>
 export const sceneConstructor = (element, xval, yval, duration) =>
   new ScrollMagic.Scene({
     triggerElement: element,
-    triggerHook: "0.85",
+    triggerHook: "0.8",
   }).setTween(fadeIn(element, xval, yval, duration));
 
 export const sceneController = () => new ScrollMagic.Controller();
