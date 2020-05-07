@@ -1,19 +1,28 @@
-import React, { Component } from "react";
+import React, { useRef, useState, useEffect } from "react";
+import { sceneConstructor, sceneController } from "../Animation/Animation";
 import Skill from "./Skill.jsx";
 import Json from "../../data/Skills.json";
 
 import styles from "./Skills.module.css";
 
-class Skills extends Component {
-  state = {
-    language: "",
+const Skills = () => {
+  const [lan, setLan] = useState("");
+  let skill = useRef(null);
+  let skillImage = useRef(null);
+  let controller = sceneController();
+
+  useEffect(() => {
+    let skillScene = sceneConstructor(skill, 0, 150, 0.6);
+    let imageScene = sceneConstructor(skillImage, 0, 60, 0.6);
+
+    controller.addScene([skillScene, imageScene]);
+  }, []);
+
+  const handleHover = async (language) => {
+    setLan(language);
   };
 
-  handleHover = async (language) => {
-    this.setState({ language });
-  };
-
-  findDescription = (language) => {
+  const findDescription = (language) => {
     var rv = "";
     Json.find(function (data) {
       if (data.language === language) {
@@ -24,29 +33,28 @@ class Skills extends Component {
     return rv;
   };
 
-  showExplanation = () => {
-    const { language } = this.state;
-    return language ? this.findDescription(language) : "Hover over Image to see Descriptions";
+  const showExplanation = () => {
+    return lan ? findDescription(lan) : "Hover over Image to see Descriptions!";
   };
 
-  Capitalize(str) {
+  const Capitalize = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1);
-  }
+  };
 
-  render() {
-    return (
-      <div className={styles.container} id="Skills">
-        <h2 className={styles.skill}>Skills</h2>
-        <div className={styles.skillContainer}>
-          {Json.map((data, i) => (
-            <Skill key={i} language={data.language} handleHover={this.handleHover} />
-          ))}
-        </div>
-        <h4>{this.Capitalize(this.state.language)}</h4>
-        <p className="">{this.showExplanation()}</p>
+  return (
+    <div className={styles.container} id="Skills">
+      <h2 ref={(e) => (skill = e)} className={styles.skill}>
+        Skills
+      </h2>
+      <div ref={(e) => (skillImage = e)} className={styles.skillContainer}>
+        {Json.map((data, i) => (
+          <Skill key={i} language={data.language} handleHover={handleHover} />
+        ))}
       </div>
-    );
-  }
-}
+      <h4>{Capitalize(lan)}</h4>
+      <p className={styles.text}>{showExplanation()}</p>
+    </div>
+  );
+};
 
 export default Skills;

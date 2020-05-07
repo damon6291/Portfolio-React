@@ -3,40 +3,42 @@
     "title": "CoronaTracker",
     "language": "React",
     "explanation": "Created a webpage that shows line chart and bar chart with Corona API",
-    "link": "",
+    "link": "https://github.com/damon6291/Corona-React",
     "demo": "https://damon6291.github.io/Corona-React/"
   },
   {
     "title": "Movie",
     "language": "React",
     "explanation": "Developed a webpage where users can search for movies",
-    "link": "",
+    "link": "https://github.com/damon6291/Movie-React",
     "demo": "https://damon6291.github.io/Movie-React/"
   },
   {
     "title": "Weather",
     "language": "React",
     "explanation": "Designed a weather webpage where users can search for world-wide weather data",
-    "link": "",
+    "link": "https://github.com/damon6291/Weather-React",
     "demo": "https://damon6291.github.io/Weather-React/"
   },
   {
     "title": "HackerNews",
     "language": "Swift",
     "explanation": "Developed an mobile application that fetches news from Hackernews API",
-    "link": "https://github.com/damon6291/HackerNews-Swift"
+    "link": "https://github.com/damon6291/HackerNews-Swift",
+    "demo": ""
   },
   {
     "title": "Visualization",
     "language": "JS",
     "explanation": "Created data visualization for a non-profit organization to clearly convey their vision to its website viewers",
-    "link": "",
+    "link": "https://github.com/NEU-DS-4200-S20/s-l-project-sumba-hospitality-foundation",
     "demo": "https://neu-ds-4200-s20.github.io/s-l-project-sumba-hospitality-foundation/"
   },
   {
     "title": "ShellToken",
     "language": "C",
     "explanation": "Wrote a program using a Linux environment that reads and process single-line shell commands with operators",
-    "link": "https://github.com/damon6291/ShellToken-C"
+    "link": "https://github.com/damon6291/ShellToken-C",
+    "demo": ""
   }
 ]

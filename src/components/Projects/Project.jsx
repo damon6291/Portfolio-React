@@ -2,6 +2,7 @@ import React from "react";
 import { CardContent, Typography, CardMedia, Button } from "@material-ui/core";
 
 import Flippy, { FrontSide, BackSide } from "react-flippy";
+import cx from "classnames";
 
 import styles from "./Project.module.css";
 
@@ -21,6 +22,20 @@ const Project = ({ title, language, explanation, link, demo }) => {
   const reference = () => {
     if (link === "") return demo;
     else return link;
+  };
+
+  const isDemo = () => {
+    if (demo === "") return <div></div>;
+    else
+      return (
+        <Button
+          variant="contained"
+          color="primary"
+          className={cx(styles.button, styles.lightblue)}
+          href={demo}>
+          Demo
+        </Button>
+      );
   };
 
   return (
@@ -51,16 +66,19 @@ const Project = ({ title, language, explanation, link, demo }) => {
         }}>
         <div className={styles.back}>
           <CardContent>
-            <Typography align="center" gutterBottom variant="h5">
+            <Typography className={styles.title} align="center" gutterBottom variant="h5">
               {title}
             </Typography>
-            <Button
-              variant="contained"
-              color="primary"
-              className={styles.button}
-              href={reference()}>
-              {linkOrDemo()}
-            </Button>
+            <div className={styles.buttonContainer}>
+              {isDemo()}
+              <Button
+                variant="contained"
+                color="default"
+                className={cx(styles.button, styles.blue)}
+                href={link}>
+                Link
+              </Button>
+            </div>
           </CardContent>
         </div>
       </BackSide>

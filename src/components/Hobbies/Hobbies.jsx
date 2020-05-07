@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { sceneConstructor, sceneController } from "../Animation/Animation";
 import camping from "../../assets/camping.jpg";
 import rockclimbing from "../../assets/rockclimbing.jpg";
 import workout from "../../assets/workout.jpg";
@@ -8,10 +9,22 @@ import styles from "./Hobbies.module.css";
 import cx from "classnames";
 
 const Hobbies = () => {
+  let hobby = useRef(null);
+  let hobbyImage = useRef(null);
+  let controller = sceneController();
+
+  useEffect(() => {
+    let hobbyScene = sceneConstructor(hobby, 0, 150, 0.6);
+    let imageScene = sceneConstructor(hobbyImage, 0, 60, 0.6);
+
+    controller.addScene([hobbyScene, imageScene]);
+  }, []);
   return (
     <div className={styles.container} id="Hobbies">
-      <h2 className={styles.skill}>Hobbies</h2>
-      <div className={styles.hobbiesContainer}>
+      <h2 ref={(e) => (hobby = e)} className={styles.skill}>
+        Hobbies
+      </h2>
+      <div ref={(e) => (hobbyImage = e)} className={styles.hobbiesContainer}>
         <div className={styles.text}>
           <img src={camping} className={styles.image} alt="camping" />
           <h3>Camping</h3>

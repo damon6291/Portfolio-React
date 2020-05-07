@@ -1,13 +1,36 @@
 .button {
-  margin-top: 100px !important;
   align-items: center !important;
   justify-content: center !important;
+  margin-bottom: 5% !important;
+}
+
+.blue {
+  background-color: rgb(250, 239, 90) !important;
+}
+
+.blue:hover {
+  background-color: rgb(224, 213, 50) !important;
+}
+
+.lightblue {
+  background-color: rgb(247, 113, 229) !important;
+}
+
+.lightblue:hover {
+  background-color: rgb(235, 78, 214) !important;
+}
+
+.title {
+  margin-bottom: 40% !important;
 }
 
 .back {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
 }

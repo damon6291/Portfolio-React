@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^7.2.1",
     "classnames": "^2.2.6",
     "gh-pages": "^2.2.0",
+    "gsap": "^3.2.6",
     "react": "^16.13.1",
     "react-background-slider": "^2.0.0",
     "react-card-flip": "^1.0.10",
@@ -18,7 +19,9 @@
     "react-flippy": "^0.1.5",
     "react-hover-observer": "^2.1.1",
     "react-scripts": "3.4.1",
-    "react-scroll": "^1.7.16"
+    "react-scroll": "^1.7.16",
+    "scrollmagic": "^2.0.7",
+    "scrollmagic-plugin-gsap": "^1.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "imports-loader": "^0.8.0"
   }
 }
