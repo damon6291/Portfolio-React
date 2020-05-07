@@ -10,12 +10,14 @@ const Skills = () => {
   let skill = useRef(null);
   let skillImage = useRef(null);
   let controller = sceneController();
+  let text = useRef(null);
 
   useEffect(() => {
     let skillScene = sceneConstructor(skill, 0, 150, 0.6);
     let imageScene = sceneConstructor(skillImage, 0, 60, 0.6);
+    let textScene = sceneConstructor(text, 0, 60, 0.6);
 
-    controller.addScene([skillScene, imageScene]);
+    controller.addScene([skillScene, imageScene, textScene]);
   }, []);
 
   const handleHover = async (language) => {
@@ -52,7 +54,9 @@ const Skills = () => {
         ))}
       </div>
       <h4>{Capitalize(lan)}</h4>
-      <p className={styles.text}>{showExplanation()}</p>
+      <p ref={(e) => (text = e)} className={styles.text}>
+        {showExplanation()}
+      </p>
     </div>
   );
 };
