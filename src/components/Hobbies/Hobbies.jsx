@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import { sceneConstructor, sceneController } from "../Animation/Animation";
-import camping from "../../assets/camping.jpg";
-import rockclimbing from "../../assets/rockclimbing.jpg";
-import workout from "../../assets/workout.jpg";
-import cooking from "../../assets/butchering.jpg";
+import camping from "../../assets/camping.webp";
+import rockclimbing from "../../assets/rockclimbing.webp";
+import workout from "../../assets/workout.webp";
+import cooking from "../../assets/butchering.webp";
 
 import styles from "./Hobbies.module.css";
 import cx from "classnames";

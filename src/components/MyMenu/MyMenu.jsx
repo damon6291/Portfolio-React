@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, Menu, MenuItem } from "@material-ui/core/";
 import MenuIcon from "@material-ui/icons/Menu";
 import { Link } from "react-scroll";
+import cx from "classnames";
 
 import styles from "./MyMenu.module.css";
 
@@ -18,6 +19,10 @@ const MyMenu = () => {
 
   return (
     <div className={styles.container}>
+      {/* <span className={styles.menu} onClick></span>
+      <span className={cx(styles.line1, styles.line)}></span>
+      <span className={cx(styles.line2, styles.line)}></span>
+      <span className={cx(styles.line3, styles.line)}></span> */}
       <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
         <MenuIcon />
       </Button>

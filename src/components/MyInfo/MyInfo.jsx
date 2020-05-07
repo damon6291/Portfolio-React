@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { sceneConstructor, sceneController } from "../Animation/Animation";
 
 import styles from "./MyInfo.module.css";
-import collaboration from "../../assets/collaboration.jpg";
+import collaboration from "../../assets/collaboration.webp";
 
 const MyInfo = () => {
   let image = useRef(null);

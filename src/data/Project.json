@@ -1,5 +1,12 @@
 [
   {
+    "title": "HajuKitchen",
+    "language": "React",
+    "explanation": "Developing an website for local restaurant using GSAP",
+    "link": "https://github.com/damon6291/Haju-React",
+    "demo": "https://damon6291.github.io/Haju-React/"
+  },
+  {
     "title": "CoronaTracker",
     "language": "React",
     "explanation": "Created a webpage that shows line chart and bar chart with Corona API",
@@ -19,13 +26,6 @@
     "explanation": "Designed a weather webpage where users can search for world-wide weather data",
     "link": "https://github.com/damon6291/Weather-React",
     "demo": "https://damon6291.github.io/Weather-React/"
-  },
-  {
-    "title": "HackerNews",
-    "language": "Swift",
-    "explanation": "Developed an mobile application that fetches news from Hackernews API",
-    "link": "https://github.com/damon6291/HackerNews-Swift",
-    "demo": ""
   },
   {
     "title": "Visualization",

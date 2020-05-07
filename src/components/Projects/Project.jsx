@@ -8,20 +8,13 @@ import styles from "./Project.module.css";
 
 const Project = ({ title, language, explanation, link, demo }) => {
   const findImage = () => {
-    if (title === "CoronaTracker") return require("../../assets/corona.jpg");
-    if (title === "Movie") return require("../../assets/movie.jpg");
-    if (title === "Weather") return require("../../assets/weather.jpg");
-    if (title === "HackerNews") return require("../../assets/hacker.jpg");
-    if (title === "Visualization") return require("../../assets/vis.jpg");
-    if (title === "ShellToken") return require("../../assets/shell.jpg");
-  };
-  const linkOrDemo = () => {
-    if (link === "") return "Demo";
-    else return "Link";
-  };
-  const reference = () => {
-    if (link === "") return demo;
-    else return link;
+    if (title === "CoronaTracker") return require("../../assets/corona.webp");
+    if (title === "Movie") return require("../../assets/movie.webp");
+    if (title === "Weather") return require("../../assets/weather.webp");
+    if (title === "HackerNews") return require("../../assets/hacker.webp");
+    if (title === "Visualization") return require("../../assets/vis.webp");
+    if (title === "ShellToken") return require("../../assets/shell.webp");
+    if (title === "HajuKitchen") return require("../../assets/haju.jpg");
   };
 
   const isDemo = () => {

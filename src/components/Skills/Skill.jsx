@@ -4,11 +4,11 @@ import styles from "./Skill.module.css";
 
 const Skill = ({ language, handleHover }) => {
   const findImage = () => {
-    if (language === "java") return require("../../assets/java.jpg");
-    if (language === "react") return require("../../assets/react.jpg");
-    if (language === "javaScript") return require("../../assets/javaScript.jpg");
-    if (language === "c") return require("../../assets/c.jpg");
-    if (language === "mysql") return require("../../assets/mysql.jpg");
+    if (language === "java") return require("../../assets/java.webp");
+    if (language === "react") return require("../../assets/react.webp");
+    if (language === "javaScript") return require("../../assets/javaScript.webp");
+    if (language === "c") return require("../../assets/c.webp");
+    if (language === "mysql") return require("../../assets/mysql.webp");
   };
   return (
     <div className={styles.container}>
