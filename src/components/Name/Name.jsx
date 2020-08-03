@@ -1,7 +1,7 @@
-import React, { useRef, useEffect } from "react";
-import { sceneConstructor, sceneController } from "../Animation/Animation";
+import React, {useRef, useEffect} from 'react';
+import {sceneConstructor, sceneController} from '../Animation/Animation';
 
-import styles from "./Name.module.css";
+import styles from './Name.module.css';
 
 const Name = () => {
   let name = useRef(null);
@@ -21,7 +21,7 @@ const Name = () => {
         Damon Joung
       </h1>
       <h2 ref={(e) => (job = e)} className={styles.job}>
-        Front-End Developer
+        Software Developer
       </h2>
     </div>
   );

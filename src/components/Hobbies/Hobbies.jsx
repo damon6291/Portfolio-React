@@ -1,12 +1,12 @@
-import React, { useRef, useEffect } from "react";
-import { sceneConstructor, sceneController } from "../Animation/Animation";
-import camping from "../../assets/camping.webp";
-import rockclimbing from "../../assets/rockclimbing.webp";
-import workout from "../../assets/workout.webp";
-import cooking from "../../assets/butchering.webp";
+import React, {useRef, useEffect} from 'react';
+import {sceneConstructor, sceneController} from '../Animation/Animation';
+import camping from '../../assets/camping.webp';
+import rockclimbing from '../../assets/rockclimbing.webp';
+import workout from '../../assets/workout.webp';
+import cooking from '../../assets/butchering.webp';
 
-import styles from "./Hobbies.module.css";
-import cx from "classnames";
+import styles from './Hobbies.module.css';
+import cx from 'classnames';
 
 const Hobbies = () => {
   let hobby = useRef(null);
@@ -31,7 +31,7 @@ const Hobbies = () => {
           <h5 className={styles.explanation}>Love to Grill outdoor!</h5>
         </div>
         <div className={styles.text}>
-          <img src={cooking} className={cx(styles.image, styles.rotation)} alt="cooking" />
+          <img src={cooking} className={styles.image} alt="cooking" />
           <h3>Cooking</h3>
           <h5 className={styles.explanation}>Enjoy cooking healthy & delicious meals</h5>
         </div>
@@ -41,7 +41,7 @@ const Hobbies = () => {
           <h5 className={styles.explanation}>Excited to reach the goal</h5>
         </div>
         <div className={styles.text}>
-          <img src={workout} className={cx(styles.image, styles.rotation)} alt="workout" />
+          <img src={workout} className={styles.image} alt="workout" />
           <h3>Workout</h3>
           <h5 className={styles.explanation}>Like to stay fit and healty</h5>
         </div>
